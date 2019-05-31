@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-
+import { NeedAuthGuard } from './login/need-auth-guard';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +19,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [NeedAuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
