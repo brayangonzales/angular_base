@@ -10,9 +10,10 @@ export class LoginService {
   constructor(private http:HttpClient) { }
 
   loginService(email:string, password:string):Observable<LoginResultModel>{
+    console.log("hola como estas");
     return this.http.post<LoginResultModel>('https://reqres.in/api/login',{
       email: email,
       password: password
-    });
+    }); 
   }
 }

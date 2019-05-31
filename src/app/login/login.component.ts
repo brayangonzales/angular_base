@@ -1,25 +1,27 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { LoginService } from './login.service';
+import { CustomerService } from './customer.service';
 import { Router } from '@angular/router';
-//import { LoginService } from './login.service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
-  email = 'peter@klaven';
+export class LoginComponent {
+  email = 'eve.holt@reqres.in';
   password = 'cityslicka';
-  constructor(private router:Router) { }
-
-  ngOnInit() {
-  }
-  /*login(){
+  constructor(private api:LoginService, private customer:CustomerService, private router:Router) { }
+  login(){
     this.api.loginService(this.email,this.password).subscribe(
       r => {
-        console.log(r)
-      }
-    )
-  }*/
-
+        if (r.token) {
+          this.customer.setToken(r.token);
+          this.router.navigateByUrl('/home');
+        }
+      },
+      r => {
+        alert(r.error.error);
+      });
+  }
 }
