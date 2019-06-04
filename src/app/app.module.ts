@@ -8,13 +8,15 @@ import { HomeComponent } from './home/home.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { NeedAuthGuard } from './login/need-auth-guard';
 import { MenuComponent } from './menu/menu.component';
+import { BodyComponent } from './body/body.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
     NavBarComponent,
-    MenuComponent
+    MenuComponent,
+    BodyComponent
   ],
   imports: [
     BrowserModule,
