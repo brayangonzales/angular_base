@@ -9,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SeccionMainComponent implements OnInit {
 
-  constructor() { }
+  constructor() { 
+
+     console.log("hola como ");
+  }
 
   ngOnInit() {
   }

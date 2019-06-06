@@ -20,22 +20,15 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "src/resources/images"
+              "src/assets"
             ],
             "styles": [
               "src/styles.css",
-              "src/resources/css/materialize.css",
-              "src/resources/css/style.css",
-              "src/resources/vendors/perfect-scrollbar/perfect-scrollbar.css",
-              "src/resources/vendors/flag-icon/css/flag-icon.min.css"
+              "./node_modules/materialize-css/dist/css/materialize.min.css",
+              "./node_modules/material-icons/iconfont/material-icons.css"
             ],
             "scripts": [
-              "src/resources/vendors/jquery-3.2.1.min.js",
-              "src/resources/js/materialize.min.js",
-              "src/resources/vendors/perfect-scrollbar/perfect-scrollbar.min.js",
-              "src/resources/js/plugins.js",
-              "src/resources/js/custom-script.js"
+              "./node_modules/materialize-css/dist/js/materialize.min.js"
             ],
             "es5BrowserSupport": true
           },
