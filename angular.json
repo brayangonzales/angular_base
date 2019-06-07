@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "../static",
+            "outputPath": "../static/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -26,9 +26,12 @@
               "src/styles.css",
               "./node_modules/materialize-css/dist/css/materialize.min.css",
               "./node_modules/material-icons/iconfont/material-icons.css"
+
             ],
             "scripts": [
-              "./node_modules/materialize-css/dist/js/materialize.min.js"
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/materialize-css/dist/js/materialize.min.js",
+              "src/scripts.js"
             ],
             "es5BrowserSupport": true
           },
