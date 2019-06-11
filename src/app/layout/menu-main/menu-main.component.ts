@@ -23,7 +23,7 @@ export class MenuMainComponent implements OnInit {
   }
   jquery_init():void{
     $(document).ready(function(){
-      $('.collapsible').collapsible();
+      $('.sidenav').sidenav();
     });
   }
 }
