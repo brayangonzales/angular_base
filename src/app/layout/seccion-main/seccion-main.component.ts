@@ -40,9 +40,9 @@ export class SeccionMainComponent implements OnInit {
 
 
   jquery_init(){
-    $(document).ready(function(){
+    /*$(document).ready(function(){
       $('.tabs-seccion').tabs();
-    });
+    });*/
   }
 
 }

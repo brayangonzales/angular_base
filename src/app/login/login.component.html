@@ -1,25 +1,50 @@
 <app-nav-bar></app-nav-bar>
-<div class="row py-3">
-    <div class="col m4 offset-m4">
-        <div class="card-panel">
-            <div class="row">
-                <div class="input-field col m12">
-                    <input placeholder="Usuario" id="usuarioText" type="text">
-                    <label for="usuarioText">Usuario</label>
-                </div>
-                <div class="input-field col m12">
-                    <input placeholder="Password" id="passwordText" type="password">
-                    <label for="passwordText">Contraseña</label>
-                </div>
-                <div class="input-field col m12">
-                    <button class="btn blue darken-3 right"
-                            type="submit"
-                            (click)="login()">
-                            <i class="material-icons right">send</i>
-                            Entrar
-                    </button>
-
-                </div>
+<div class="section">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-4 is-mobile">
+                    <div class="panel">
+                            <div class="panel-heading">
+                                LOGIN   
+                            </div>
+                            <div class="panel-block">
+                                <div class="field">
+                                    <label class="label">Usuario</label>
+                                    <div class="control has-icons-left has-icons-right">
+                                        <input class="input" type="text" placeholder="Usuario" >
+                                        <span class="icon is-small is-left">
+                                            <i class="fa fa-user"></i>
+                                        </span>
+                                        <span class="icon is-small is-right">
+                                            <i class="fa fa-check"></i>
+                                        </span>
+                                    </div>
+                                    <p class="help is-success">Usuario valido</p>
+                                </div>
+                            </div>
+                            <div class="panel-block">              
+                                <div class="field">
+                                    <label class="label">Contraseña</label>
+                                    <div class="control has-icons-left has-icons-right">
+                                        <input class="input" type="password" placeholder="Contraseña" value="">
+                                        <span class="icon is-small is-left">
+                                            <i class="fa fa-envelope"></i>
+                                        </span>
+                                        <span class="icon is-small is-right">
+                                            <i class="fa fa-exclamation-triangle"></i>
+                                        </span>
+                                    </div>
+                                    <p class="help is-danger">This email is invalid</p>
+                                </div> 
+                            </div>
+                            <div class="panel-block">                       
+                                <div class="field is-grouped">
+                                    <div class="control">
+                                        <button class="button is-link" type="submit" (click)="login()">Entrar</button>
+                                    </div>
+                                </div>                
+                            </div>
+                    </div>
             </div>
         </div>
     </div>

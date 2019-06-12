@@ -1,8 +1,43 @@
-<ul id="slide-out" class="sidenav sidenav-fixed">
-    <li><a href="#!">First Link With Icon</a></li>
-    <li><a href="#!">Second Link</a></li>
-    <li><div class="divider"></div></li>
-    <li><a class="subheader">Subheader</a></li>
-    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-</ul>
-    
+<aside class="menu">
+    <p class="menu-label">
+      Administracion
+    </p>
+    <ul class="menu-list" *ngFor="let menu of listaMenu">
+        <li id="menu-item-head">
+            <a>
+                <span class="icon">
+                    <i class="fa fa-folder"></i>
+                </span>  
+                {{menu}}
+            </a>
+        </li>
+        <li>
+            <ul id="sub-menu-item">
+                <li>
+                    <a>
+                        <span class="icon is-small">
+                            <i class="fa fa-user "></i>
+                        </span>  
+                        Members
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="icon is-small">
+                            <i class="fa fa-sign-in"></i>
+                        </span>  
+                        Members
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="icon is-small">
+                            <i class="fa fa-paper-plane"></i>
+                        </span>  
+                        Members
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</aside>

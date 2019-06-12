@@ -14,8 +14,13 @@ export class HeaderMainComponent implements OnInit {
   }
 
   jquery_init():void{
-    console.log("hola soy un dropdown");
-    $(".dropdown-trigger").dropdown();
+    $(".dropdown").click(function () {
+      $(".dropdown").toggleClass("is-active");
+    });
+  
+    $(".dropdown").blur(function () {
+      $(".dropdown").removeClass("is-active");
+    });
   }
 
 }
