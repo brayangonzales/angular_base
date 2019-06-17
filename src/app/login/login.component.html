@@ -1,49 +1,24 @@
-<app-nav-bar></app-nav-bar>
-<div class="section">
-    <div class="container">
-        <div class="columns is-centered">
-            <div class="column is-4 is-mobile">
-                    <div class="panel">
-                            <div class="panel-heading">
-                                LOGIN   
+<app-nav-bar class="ui secondary pointing menu"></app-nav-bar>
+<div class="ui segment">
+    <div class="ui sixteen column grid">
+        <div class="row">
+            <div class="column">
+                    <div class="ui form">
+                            <div class="field">
+                              <label>Usuario</label>
+                              <input type="text" name="first-name" placeholder="Usuario">
                             </div>
-                            <div class="panel-block">
-                                <div class="field">
-                                    <label class="label">Usuario</label>
-                                    <div class="control has-icons-left has-icons-right">
-                                        <input class="input" type="text" placeholder="Usuario" >
-                                        <span class="icon is-small is-left">
-                                            <i class="fa fa-user"></i>
-                                        </span>
-                                        <span class="icon is-small is-right">
-                                            <i class="fa fa-check"></i>
-                                        </span>
-                                    </div>
-                                    <p class="help is-success">Usuario valido</p>
-                                </div>
+                            <div class="field">
+                              <label>Password</label>
+                              <input type="text" name="last-name" placeholder="Last Name">
                             </div>
-                            <div class="panel-block">              
-                                <div class="field">
-                                    <label class="label">Contraseña</label>
-                                    <div class="control has-icons-left has-icons-right">
-                                        <input class="input" type="password" placeholder="Contraseña" value="">
-                                        <span class="icon is-small is-left">
-                                            <i class="fa fa-envelope"></i>
-                                        </span>
-                                        <span class="icon is-small is-right">
-                                            <i class="fa fa-exclamation-triangle"></i>
-                                        </span>
-                                    </div>
-                                    <p class="help is-danger">This email is invalid</p>
-                                </div> 
+                            <div class="field">
+                              <div class="ui checkbox">
+                                <input type="checkbox" tabindex="0" class="hidden">
+                                <label>Recordar contraseña</label>
+                              </div>
                             </div>
-                            <div class="panel-block">                       
-                                <div class="field is-grouped">
-                                    <div class="control">
-                                        <button class="button is-link" type="submit" (click)="login()">Entrar</button>
-                                    </div>
-                                </div>                
-                            </div>
+                            <button class="ui button blue" type="submit" (click)="login()">Entrar</button>
                     </div>
             </div>
         </div>

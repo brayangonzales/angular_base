@@ -2,8 +2,9 @@
     <p class="menu-label">
       Administracion
     </p>
-    <ul class="menu-list" *ngFor="let menu of listaMenu">
-        <li id="menu-item-head">
+    <ul class="menu-list" *ngFor="let menu of listaMenu"
+        >
+        <li id="menu-item-head" (load)="jquery_init($event)">
             <a>
                 <span class="icon">
                     <i class="fa fa-folder"></i>

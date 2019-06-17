@@ -12,7 +12,7 @@ export class MenuMainComponent implements OnInit {
 
   ngOnInit() {
     this.listarMenu();
-    this.jquery_init();
+    //this.jquery_init();
   }
   listarMenu(){
     console.log("jola");
@@ -21,8 +21,9 @@ export class MenuMainComponent implements OnInit {
     this.listaMenu.push("menu3");
     this.listaMenu.push("menu4");
   }
-  jquery_init():void{
-    console.log($('#menu-item-head').length)
+  public jquery_init(event):void{
+    console.log("ya cargue mi modulo")
+    console.log(event);
     $('[name="menu-item-head"]').click(function(){
       console.log("golas")
         $('[name="sub-menu-item"]').toggleClass("is-hidden");
