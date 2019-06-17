@@ -1,25 +1,25 @@
 <app-nav-bar class="ui secondary pointing menu"></app-nav-bar>
-<div class="ui segment">
-    <div class="ui sixteen column grid">
-        <div class="row">
-            <div class="column">
-                    <div class="ui form">
-                            <div class="field">
-                              <label>Usuario</label>
-                              <input type="text" name="first-name" placeholder="Usuario">
-                            </div>
-                            <div class="field">
-                              <label>Password</label>
-                              <input type="text" name="last-name" placeholder="Last Name">
-                            </div>
-                            <div class="field">
-                              <div class="ui checkbox">
-                                <input type="checkbox" tabindex="0" class="hidden">
-                                <label>Recordar contraseña</label>
-                              </div>
-                            </div>
-                            <button class="ui button blue" type="submit" (click)="login()">Entrar</button>
+<div class="ui grid centered">
+    <div class="two column row">
+        <div class="column">
+            <div class="ui segment">
+                <div class="ui form">
+                    <div class="field">
+                        <label>Usuario</label>
+                        <input type="text" name="first-name" placeholder="Usuario">
                     </div>
+                    <div class="field">
+                        <label>Contraseña</label>
+                        <input type="text" name="last-name" placeholder="Contraseña">
+                    </div>
+                    <div class="field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" tabindex="0" class="hidden">
+                            <label>Recordar contraseña</label>
+                        </div>
+                    </div>
+                    <button class="ui button blue" type="submit" (click)="login()">Entrar</button>
+                </div>
             </div>
         </div>
     </div>
