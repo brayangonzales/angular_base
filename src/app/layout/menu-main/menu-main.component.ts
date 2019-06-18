@@ -20,6 +20,16 @@ export class MenuMainComponent implements OnInit {
     this.listaMenu.push("menu2");
     this.listaMenu.push("menu3");
     this.listaMenu.push("menu4");
+    this.listaMenu.push("menu5");
+    this.listaMenu.push("menu5");
+    this.listaMenu.push("menu5");
+    this.listaMenu.push("menu5");
+    this.listaMenu.push("menu5");
+    this.listaMenu.push("menu5");
+    this.listaMenu.push("menu5");
+    this.listaMenu.push("menu5");
+    this.listaMenu.push("menu5");
+
   }
   public jquery_init(): void {
     console.log("hola");

@@ -1,12 +1,10 @@
-
-pokemon
-<div class="container-fluid">
-    <div class="row" *ngIf="tabs.length>0">
-      <div class="col m12">
-        <ul class="tabs-seccion">
-          <li class="tab col m1" *ngFor="let tab of tabs"><a href="#{{tab.id}}">{{tab.titulo}} </a></li>
-        </ul>
-      </div>
-      <div id="{{tab.id}}" class="col s12" *ngFor="let tab of tabs">{{tab.titulo}}</div>
-    </div>
+<div class="main-content">
+  <div class="ui tabular menu">
+    <a class="active item">
+      Bio
+    </a>
+    <a class="item">
+      Photos
+    </a>
+  </div>
 </div>

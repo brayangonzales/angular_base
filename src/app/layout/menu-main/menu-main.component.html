@@ -1,60 +1,8 @@
-<div class="ui visible left vertical  sidebar labeled  menu">
-    <img src="assets/img/logo1.png" class="main-menu-logo" />
-    <a class="item main-menu-btn" data-content="Dashboard">
-        <i class="home icon"></i>dsad sad asd asd sad asd asd sa ds
-    </a>
-    <a class="item main-menu-btn" data-content="Just a leaf!">
-        <i class="leaf icon"></i> holsa s dsjkdj sajkd sajkdh sadjshajs
-    </a>
-    <a class="item main-menu-btn" data-content="Just a leaf!">
-        <i class="leaf icon"></i>
-    </a>
-    <a class="item main-menu-btn" data-content="Just a leaf!">
-        <i class="leaf icon"></i>
-    </a>
-    <a class="item main-menu-btn" data-content="Just a leaf!">
-        <i class="leaf icon"></i>
-    </a>
-    <a class="item main-menu-btn" data-content="Just a leaf!">
-        <i class="leaf icon"></i>
-    </a>
-    <a class="item main-menu-btn" data-content="Just a leaf!">
-        <i class="leaf icon"></i>
-    </a>
-    <a class="item main-menu-btn" data-content="Just a leaf!">
-        <i class="leaf icon"></i>
-    </a>
-    <a class="item main-menu-btn" data-content="Just a leaf!">
-        <i class="leaf icon"></i>
-    </a>
-    <a class="item main-menu-btn" data-content="Just a leaf!">
-        <i class="leaf icon"></i>
-    </a>
-    <a class="item main-menu-btn" data-content="Just a leaf!">
-        <i class="leaf icon"></i> holsa s dsjkdj sajkd sajkdh sadjshajs
-    </a>
-    <a class="item main-menu-btn" data-content="Just a leaf!">
-        <i class="leaf icon"></i>
-    </a>
-    <a class="item main-menu-btn" data-content="Just a leaf!">
-        <i class="leaf icon"></i>
-    </a>
-    <a class="item main-menu-btn" data-content="Just a leaf!">
-        <i class="leaf icon"></i>
-    </a>
-    <a class="item main-menu-btn" data-content="Just a leaf!">
-        <i class="leaf icon"></i>
-    </a>
-    <a class="item main-menu-btn" data-content="Just a leaf!">
-        <i class="leaf icon"></i>
-    </a>
-    <a class="item main-menu-btn" data-content="Just a leaf!">
-        <i class="leaf icon"></i>
-    </a>
-    <a class="item main-menu-btn" data-content="Just a leaf!">
-        <i class="leaf icon"></i>
-    </a>
-    <a class="item main-menu-btn" data-content="Just a leaf!">
-        <i class="leaf icon"></i>
+<div class="ui visible left vertical  sidebar labeled  menu box-shadow_remove" >
+    <img src="assets/ariesLogo.png" class="main-menu-logo" />
+    <div class="ui section divider">
+    </div>
+    <a *ngFor="let menu of listaMenu" class="item main-menu-btn" data-content="Dashboard">
+        <i class="home icon"></i>{{menu}}
     </a>
 </div>
