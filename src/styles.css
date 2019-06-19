@@ -26,28 +26,30 @@ body {
 .main-menu-logo {
     margin-top: 10px;
     margin-bottom: -30px;
-    margin-left: 50px;
-    max-width: 150px;
+    margin-left: 10px;
+    max-width: 120px;
     border-bottom: rgba(255, 255, 255, 0.3) dotted 1px;
 }
 
 .main-menu-btn {
     font-weight: bolder;
 }
-
+.pos-icon-left{
+    float: left !important;
+    margin: 0 .5em 0 0 !important;
+}
 .main-content-wrapper {
     position: relative;
     width: 100%;
     height: 100%;
     min-height: 100%;
-    padding-top: 40px;
-    padding-left: 259px;
+    /*padding-top: 40px;*/
+    padding-left: 258px;
 }
 .box-shadow_remove{
     box-shadow: none !important;
 }
-.main-content-wrapper .main-content-menu.ui.fixed.secondary.menu {
-    padding-left: 259px;
+.main-content-wrapper .main-content-menu.ui.tabular.menu {
     /*border-bottom: 1px solid rgba(34,36,38,.15);*/
     background: #fff;
     border: 1px #eee solid ;
@@ -78,8 +80,8 @@ body {
 }
 
 .main-content {
-    height: 100%;
-    min-height: 100%;
+    height: 93%;
+    min-height: 93%;
 }
 
 

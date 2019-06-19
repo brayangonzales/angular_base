@@ -16,9 +16,9 @@ export class MenuMainComponent implements OnInit {
   }
   listarMenu() {
     console.log("jola");
-    this.listaMenu.push("menu1");
-    this.listaMenu.push("menu2");
-    this.listaMenu.push("menu3");
+    this.listaMenu.push("Cierre y apertura de boveda  ");
+    this.listaMenu.push("Herramientas de venta");
+    this.listaMenu.push("Reportes");
     this.listaMenu.push("menu4");
     this.listaMenu.push("menu5");
     this.listaMenu.push("menu5");

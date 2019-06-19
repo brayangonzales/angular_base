@@ -14,13 +14,7 @@ export class HeaderMainComponent implements OnInit {
   }
 
   jquery_init():void{
-    $(".dropdown").click(function () {
-      $(".dropdown").toggleClass("is-active");
-    });
-  
-    $(".dropdown").blur(function () {
-      $(".dropdown").removeClass("is-active");
-    });
+    $('.ui.dropdown').dropdown({keepOnScreen: true});
   }
 
 }
