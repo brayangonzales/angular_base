@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 declare var $: any;
 
 @Component({
@@ -8,11 +8,17 @@ declare var $: any;
 })
 export class MenuMainComponent implements OnInit {
   listaMenu: string[] = [];
+  @Input()
+  set ready(isReady: boolean) {
+    if (isReady) console.log("hola");
+  }
   constructor() { }
 
+  
+
   ngOnInit() {
-    this.listarMenu();
     this.jquery_init();
+    this.listarMenu();
   }
   listarMenu() {
     console.log("jola");
@@ -34,8 +40,13 @@ export class MenuMainComponent implements OnInit {
   public jquery_init(): void {
     console.log("hola");
     //$('.ui.sidebar').sidebar('toggle');
-    $('a.sidebar-toggle').click(function () {
-      $('#sidebar').sidebar('toggle');
+    $(document).ready(function(){
+      $('.accordion').accordion({
+        selector: {
+          trigger: '.title .icon'
+        }
+      });
     });
+    
   }
 }

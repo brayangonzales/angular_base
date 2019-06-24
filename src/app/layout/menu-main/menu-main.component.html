@@ -9,7 +9,20 @@
         </div>
     </div>
 
-    <a *ngFor="let menu of listaMenu" class="item main-menu-btn" data-content="Dashboard">
-        <i class="yellow folder icon pos-icon-left"></i>{{menu}}
+    <a *ngFor="let menu of listaMenu" class="ui accordion item main-menu-btn">
+        <div class="active title">
+            <i class="yellow folder icon pos-icon-left"></i>{{menu}}
+        </div>
+        <div class="content">
+            <div class="ui list ">
+                <div class="item">
+                    <i class="folder icon"></i> 
+                    <div class="content">
+                        <div class="header">inciso a</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </a>
 </div>
