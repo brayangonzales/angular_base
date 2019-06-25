@@ -14,9 +14,18 @@ export class HeaderMainComponent implements OnInit {
   }
 
   jquery_init():void{
+    $("#main-head").click(f=>{
+      $("#main-icon-head").addClass("teal");
+      $("#doc-icon-head").removeClass("teal");
+    });
+    $("#doc-head").click(f=>{
+      $("#main-icon-head").removeClass("teal");
+      $("#doc-icon-head").addClass("teal");
+    });
     console.log("tab");
     $('.menu .item')
     .tab();
+    $('.ui.dropdown').dropdown({keepOnScreen: true});
   }
 
 }

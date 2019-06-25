@@ -34,7 +34,7 @@ body {
 .main-menu-btn {
     font-weight: bolder;
 }
-.pos-icon-left{
+.pos-icon-left-menu{
     float: left !important;
     margin: 0 .5em 0 0 !important;
 }
@@ -45,11 +45,12 @@ body {
     min-height: 100%;
     /*padding-top: 40px;*/
     padding-left: 258px;
+    border-bottom: 2px solid #dedede;
 }
 .box-shadow_remove{
     box-shadow: none !important;
 }
-.main-content-wrapper .main-content-menu.ui.tabular.menu {
+.main-content-wrapper .main-content-menu.ui.pointing.menu {
     /*border-bottom: 1px solid rgba(34,36,38,.15);*/
     background: #fff;
     border: 1px #eee solid ;
@@ -57,7 +58,7 @@ body {
 }
 
 .main-content-menu .right.menu .dropdown.item {
-    padding: 0px;
+    /*padding: 0px;*/
     background-color: transparent !important;
 }
 
@@ -73,20 +74,28 @@ body {
 .main-content-avatar {
     height: 48px;
 }
-
+.menu-text{
+    font-weight: 500;
+    height: 20px;
+    margin-top: -15px;
+}
 .ui.menu .ui.dropdown .menu>.main-content-username-credential.item {
     font-weight: bolder !important;
     color: rgba(0, 0, 0, 0.5) !important;
 }
 
-.main-content {
-    height: 93%;
-    min-height: 93%;
+.main-content.ui.bottom.attached.tab.segment {
+    /*height: 010%;
+    min-height: 93%;*/
+    padding-left: 10px;
+    border-bottom: unset !important;
 }
-.main-content div {
-    padding-right: 100px;
+.main-content.ui.attached.segment{
+    margin-left: 1px !important;
 }
-
+.without-border-menu{
+    margin-bottom: unset !important;
+}
 
 ::-webkit-scrollbar {
     width: 10px;

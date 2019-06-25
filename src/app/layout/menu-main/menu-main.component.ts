@@ -21,29 +21,29 @@ export class MenuMainComponent implements OnInit {
     this.listarMenu();
   }
   listarMenu() {
-    console.log("jola");
-    this.listaMenu.push("Cierre y apertura de boveda  ");
+    this.listaMenu.push("Cierre y apertura de caja  ");
     this.listaMenu.push("Herramientas de venta");
-    this.listaMenu.push("Reportes");
-    this.listaMenu.push("menu4");
-    this.listaMenu.push("menu5");
-    this.listaMenu.push("menu5");
-    this.listaMenu.push("menu5");
-    this.listaMenu.push("menu5");
-    this.listaMenu.push("menu5");
-    this.listaMenu.push("menu5");
-    this.listaMenu.push("menu5");
-    this.listaMenu.push("menu5");
-    this.listaMenu.push("menu5");
-
+    this.listaMenu.push("Busqueda de recibos");
+    this.listaMenu.push("Pagos");
+    this.listaMenu.push("Remesas");
+    this.listaMenu.push("Reportes Especificos");
+    this.listaMenu.push("Reportes Periodicos");
+  }
+  evento(){
+    console.log("hola soy un evento");
   }
   public jquery_init(): void {
     console.log("hola");
     //$('.ui.sidebar').sidebar('toggle');
+    
     $(document).ready(function(){
+      $(".menu-text").click(f=>{
+        $(".pos-icon-left-menu").removeClass("folder");
+        $(".pos-icon-left-menu").addClass("folder open");
+      });
       $('.accordion').accordion({
         selector: {
-          trigger: '.title '
+          trigger: '.menu-text '
         }
       });
     });

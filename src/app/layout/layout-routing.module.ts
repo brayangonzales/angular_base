@@ -18,11 +18,6 @@ const routes: Routes = [
         path:'',
         component: MenuMainComponent,
         outlet: 'menu'
-      },
-      {
-        path:'',
-        component: HeaderMainComponent,
-        outlet: 'head'
       }
     ]
   }
