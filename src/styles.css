@@ -83,6 +83,9 @@ body {
     height: 93%;
     min-height: 93%;
 }
+.main-content div {
+    padding-right: 100px;
+}
 
 
 ::-webkit-scrollbar {

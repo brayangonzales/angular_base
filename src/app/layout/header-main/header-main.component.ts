@@ -14,7 +14,9 @@ export class HeaderMainComponent implements OnInit {
   }
 
   jquery_init():void{
-    $('.ui.dropdown').dropdown({keepOnScreen: true});
+    console.log("tab");
+    $('.menu .item')
+    .tab();
   }
 
 }

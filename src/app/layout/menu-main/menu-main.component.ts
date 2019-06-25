@@ -43,7 +43,7 @@ export class MenuMainComponent implements OnInit {
     $(document).ready(function(){
       $('.accordion').accordion({
         selector: {
-          trigger: '.title .icon'
+          trigger: '.title '
         }
       });
     });
