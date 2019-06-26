@@ -8,6 +8,7 @@ import { MenuMainComponent } from './menu-main/menu-main.component';
 import { HeaderMainComponent } from './header-main/header-main.component';
 import { AdministracionModule } from '../administracion/administracion.module';
 
+
 @NgModule({
   declarations: [LayoutComponent, SeccionMainComponent, MenuMainComponent, HeaderMainComponent],
   imports: [
