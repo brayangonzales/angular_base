@@ -6,6 +6,7 @@ import { LayoutComponent } from './layout.component';
 import { SeccionMainComponent } from './seccion-main/seccion-main.component';
 import { MenuMainComponent } from './menu-main/menu-main.component';
 import { HeaderMainComponent } from './header-main/header-main.component';
+
 import { AdministracionModule } from '../administracion/administracion.module';
 
 @NgModule({
