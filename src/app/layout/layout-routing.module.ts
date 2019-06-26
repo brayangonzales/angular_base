@@ -12,7 +12,13 @@ const routes: Routes = [
       {
         path:'',
         component: SeccionMainComponent,
-        outlet: 'main'
+        outlet: 'main',
+        children:[
+          {
+            path:'',
+            loadChildren:'../administracion/administracion.module#AdministracionModule'
+          }
+        ]
       },
       {
         path:'',
@@ -21,6 +27,7 @@ const routes: Routes = [
       }
     ]
   }
+  
 ];
 
 @NgModule({
