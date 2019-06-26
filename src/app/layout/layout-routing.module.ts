@@ -13,17 +13,15 @@ const routes: Routes = [
         path:'',
         component: SeccionMainComponent,
         outlet: 'main',
-        children:[
-          {
-            path:'',
-            loadChildren:'../administracion/administracion.module#AdministracionModule'
-          }
-        ]
       },
       {
         path:'',
         component: MenuMainComponent,
         outlet: 'menu'
+      },
+      {
+        path:'',
+        loadChildren:'../administracion/administracion.module#AdministracionModule'
       }
     ]
   }
