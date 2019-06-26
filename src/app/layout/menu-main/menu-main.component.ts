@@ -15,6 +15,7 @@ export class MenuMainComponent implements OnInit {
   constructor() { }
 
   
+  
 
   ngOnInit() {
     this.jquery_init();
