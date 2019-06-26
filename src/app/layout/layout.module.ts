@@ -5,6 +5,7 @@ import { LayoutRoutingModule } from './layout-routing.module';
 import { LayoutComponent } from './layout.component';
 import { SeccionMainComponent } from './seccion-main/seccion-main.component';
 import { HeaderMainComponent } from './header-main/header-main.component';
+
 import { AdministracionModule } from '../administracion/administracion.module';
 
 @NgModule({
