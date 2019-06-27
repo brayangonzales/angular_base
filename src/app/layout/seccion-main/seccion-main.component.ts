@@ -11,6 +11,7 @@ export class SeccionMainComponent implements OnInit {
   constructor() { 
      console.log("hola como ");
   }
+  
 
   ngOnInit() {
     this.jquery_init();

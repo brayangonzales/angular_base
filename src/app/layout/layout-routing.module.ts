@@ -6,6 +6,7 @@ import { MenuMainComponent } from './menu-main/menu-main.component';
 import { HeaderMainComponent } from './header-main/header-main.component'
 const routes: Routes = [
   {
+    
     path:'',
     component: LayoutComponent,
     children:[
