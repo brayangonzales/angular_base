@@ -6,27 +6,32 @@ import { MenuMainComponent } from './menu-main/menu-main.component';
 import { HeaderMainComponent } from './header-main/header-main.component'
 const routes: Routes = [
   {
-    
-    path:'',
+
+    path: '',
     component: LayoutComponent,
-    children:[
+    children: [
       {
-        path:'',
+        path: '',
         component: SeccionMainComponent,
         outlet: 'main',
       },
       {
-        path:'',
+        path: '',
         component: MenuMainComponent,
         outlet: 'menu'
       },
       {
         path:'',
-        loadChildren:'../administracion/administracion.module#AdministracionModule'
+        children: [
+          {
+            path: '',
+            loadChildren: '../administracion/administracion.module#AdministracionModule'
+          }
+        ]
       }
     ]
   }
-  
+
 ];
 
 @NgModule({

@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
-import { AdministracionRoutingModule } from './administracion-routing.module';
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    AdministracionRoutingModule
-  ]
+  imports: [RouterModule.forChild([
+    {
+      path:'usuario',
+      loadChildren:'./usuario/usuario.module#UsuarioModule'
+    }
+  ])],
+  exports: [RouterModule]
 })
 export class AdministracionModule { }
