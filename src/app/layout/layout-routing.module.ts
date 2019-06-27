@@ -11,8 +11,8 @@ const routes: Routes = [
     children:[
       {
         path:'',
-        component: SeccionMainComponent,
-        outlet: 'main',
+        loadChildren: './seccion-main/seccion-main.module#SeccionMainModule'
+        
       },
       {
         path:'',
@@ -20,8 +20,8 @@ const routes: Routes = [
         outlet: 'menu'
       },
       {
-        path:'',
-        loadChildren:'../administracion/administracion.module#AdministracionModule'
+        path: '',
+        loadChildren: '../administracion/administracion.module#AdministracionModule'
       }
     ]
   }
