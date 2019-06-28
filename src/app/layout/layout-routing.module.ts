@@ -13,7 +13,7 @@ const routes: Routes = [
       {
         path: '',
         component: SeccionMainComponent,
-        outlet: 'main',
+        outlet: 'main'
       },
       {
         path: '',
@@ -21,13 +21,8 @@ const routes: Routes = [
         outlet: 'menu'
       },
       {
-        path:'',
-        children: [
-          {
-            path: '',
-            loadChildren: '../administracion/administracion.module#AdministracionModule'
-          }
-        ]
+        path: '',
+        loadChildren: '../administracion/administracion.module#AdministracionModule'
       }
     ]
   }
