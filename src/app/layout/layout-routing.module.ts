@@ -13,7 +13,6 @@ const routes: Routes = [
       {
         path: '',
         component: SeccionMainComponent,
-        outlet: 'main'
       },
       {
         path: '',
@@ -26,6 +25,7 @@ const routes: Routes = [
       }
     ]
   }
+
 
 ];
 

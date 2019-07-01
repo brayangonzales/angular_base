@@ -4,8 +4,7 @@ import { UsuarioComponent } from './usuario.component';
 const routes: Routes = [
   {
     path:'',
-    component: UsuarioComponent,
-    outlet:'component'
+    component: UsuarioComponent
   }
 ];
 

@@ -1,4 +1,13 @@
 <router-outlet name='menu'></router-outlet>
 <div class="main-content-wrapper">
-    <router-outlet name='main'></router-outlet>
+    <app-header-main class="main-content-menu ui pointing menu without-border-menu">
+
+    </app-header-main>
+    <div class="main-content ui bottom attached active tab segment" data-tab="principal">
+        <router-outlet></router-outlet>
+
+    </div>
+    <div class="main-content ui bottom attached tab segment" data-tab="documentacion">
+        second
+    </div>
 </div>
