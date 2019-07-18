@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { MenuService } from './menu.service';
 declare var $: any;
 
 @Component({
@@ -12,10 +13,7 @@ export class MenuMainComponent implements OnInit {
   set ready(isReady: boolean) {
     if (isReady) console.log("hola");
   }
-  constructor() { }
-
-  
-  
+  constructor(private servivio: MenuService) { }
 
   ngOnInit() {
     this.jquery_init();
@@ -29,16 +27,24 @@ export class MenuMainComponent implements OnInit {
     this.listaMenu.push("Remesas");
     this.listaMenu.push("Reportes Especificos");
     this.listaMenu.push("Reportes Periodicos");
+    this.listarUsuario();
+    
   }
-  evento(){
+  listarUsuario(){
+    this.servivio.getListar().subscribe(data => {
+      console.log();
+    });
+  }
+
+  evento() {
     console.log("hola soy un evento");
   }
   public jquery_init(): void {
     console.log("hola");
     //$('.ui.sidebar').sidebar('toggle');
-    
-    $(document).ready(function(){
-      $(".menu-text").click(f=>{
+
+    $(document).ready(function () {
+      $(".menu-text").click(f => {
         $(".pos-icon-left-menu").removeClass("folder");
         $(".pos-icon-left-menu").addClass("folder open");
       });
@@ -48,6 +54,6 @@ export class MenuMainComponent implements OnInit {
         }
       });
     });
-    
+
   }
 }

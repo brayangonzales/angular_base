@@ -9,14 +9,16 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  email = 'eve.holt@reqres.in';
-  password = 'cityslicka';
+  email = 'alex123';
+  password = 'alex123';
   constructor(private api:LoginService, private customer:CustomerService, private router:Router) { }
   login(){
     this.api.loginService(this.email,this.password).subscribe(
       r => {
-        if (r.token) {
-          this.customer.setToken(r.token);
+        console.log(r);
+        console.log(r.result.token);
+        if (r.result.token) {
+          this.customer.setToken(r.result.token);
           this.router.navigateByUrl('/app');
         }
       },
